@@ -22,7 +22,7 @@ header{
 	z-index: 1400;
 	width: 100%;
 	height: 4.4rem;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(255, 255, 255, 1);
 	backdrop-filter: blur(2rem);
 }
 
@@ -33,6 +33,7 @@ header{
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
+	font-size: 25px;
 }
 
 .head_cont{
@@ -42,14 +43,14 @@ header{
 .intro_section{
 	height: 20.2rem;
 	margin-top: 4.4rem;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(255, 255, 255, 1);
 	background-size: auto 24.6rem;
 	background-repeat: no-repeat;
 	text-align: center;
 }
 
 .intro{
-	color: white;
+	color: black;
 }
 
 .sec_cont{
@@ -57,10 +58,11 @@ header{
 	width: 70vw;
 }
 
-.code_1{
+.code{
 	height: 20.2rem;
 	background-size: auto.2rem;
 	background-repeat: no-repeat;
+	padding-top: 2rem;
 }
 
 .code_sec_cont{
@@ -73,14 +75,14 @@ header{
 	text-align: center;
 }
 
-.code{
+.code-script{
 	width: 30rem;
 	height: 20.2rem;
 	overflow-x: auto;
     overflow-y: auto;
-	padding: 0 2rem;
 }
 
 .title{
 	width: 30rem;
+	padding: 0 1.5rem;
 }

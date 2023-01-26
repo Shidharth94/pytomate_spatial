@@ -22,7 +22,7 @@
 		</div>
 	</section>
 	
-<section class="code_1">
+<section class="code">
 	<div class="container code_sec_cont">
 		<div class="title">
 			<h2>Reading/Writing GeoTiff Files with "Rasterio"</h2><br>
@@ -33,10 +33,16 @@
 				</p>
 			</div>
 		</div>
-<div class="code">
+<div class="code-script">
 <pre>
 <code>
 import rasterio
+
+'''
+file path should include file name and extension
+example input: /home/my_tiffs/in.tif
+example output: /home/my_tiffs/out.tif
+'''
 
 PATH_RAS_IN = "your input GeoTiff file path"
 PATH_RAS_OUT = "your output GeoTiff file path"
@@ -59,10 +65,57 @@ analysed_ras = raster_analysis(raster)
 # Write analysed GeoTiff file
 with rasterio.open(PATH_RAS_OUT, 'w', **profile) as dst:
 	dst.write(analysed_ras)
-
 </code>
 </pre>
 </div>
+	</div>
+</section>
+
+<section class="code">
+	<div class="container code_sec_cont">
+<div class="code-script">
+<pre>
+<code>
+import geopandas as gpd
+
+'''
+file path should include file name and extension
+example input: /home/my_shps/in.shp
+example output: /home/my_shps/out.shp
+'''
+
+PATH_SHP_IN = "your input Vector file path"
+PATH_SHP_OUT = "your output Vector file path"
+
+def vector_analysis(gdf):
+	'''
+	function to do analysis on the
+	columns of the read vector file
+	'''
+	# do something with the vector file
+	return gdf
+
+# Read Vector file
+gdf = gpd.read_file(PATH_SHP_IN)
+
+analysed_gdf = vector_analysis(gdf)
+
+# Write analysed Vector file
+analysed_gdf.to_file(PATH_SHP_OUT)
+</code>
+</pre>
+</div>
+	<div class="title">
+		<h2>Reading/Writing Vector Files with "Geopandas"</h2><br>
+		<div class="code-description">
+			<p>Geopandas is one of the most used python module for vector data analysis.
+			The resulatant of the ".read_file()" method in geopandas yields a GeoDataFrame which 
+			mimics "pandas" (a popular module in python for handling table type files like csv, 
+			xls, xlsx, etc.) DataFrame to some extent making it easy for user to learn and apply 
+			most of the functionalities of a common dataframe if they have worked with pandas before.
+			</p>
+		</div>
+	</div>
 	</div>
 </section>
 
