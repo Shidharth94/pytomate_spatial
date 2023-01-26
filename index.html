@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pytomate Spatial</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="container head_cont">
+			<a class="blog_name" href="index.html">Pytomate<br>Spatial</a>
+		</div>
+	</header>
+	<section class="intro_section">
+		<div class="container sec_cont">
+			<p class="intro">Greetings fellow geospatial enthusiasts,
+			I am Shidharth and I welcome you to my conclave of geospatial awesomeness.
+			I created this blog to share my learnings and findings I have came aross
+			while trying to solve various geospatial problems through automation.
+			I certainly hope my implementations will help atleast a few.
+			</p>
+		</div>
+	</section>
+	
+<section class="code_1">
+	<div class="container code_sec_cont">
+		<div class="title">
+			<h2>Reading/Writing GeoTiff Files with "Rasterio"</h2><br>
+			<div class="code-description">
+				<p>Rasterio is one of the most used and easy to implement python module for reading and writing GeoTiff files. The ".read()" method in rasterio yields a
+				numpy array which makes it easy to perform complex mathematical calculations on the read 
+				raster.
+				</p>
+			</div>
+		</div>
+<div class="code">
+<pre>
+<code>
+import rasterio
+
+PATH_RAS_IN = "your input GeoTiff file path"
+PATH_RAS_OUT = "your output GeoTiff file path"
+
+def raster_analysis(raster):
+	'''
+	function to do analysis on the read
+	raster
+	'''
+	# do something with the raster
+	return raster
+
+# Read GeoTiff file
+with rasterio.open(PATH_RAS_IN) as src:
+	profile = src.profile
+	raster = src.read()
+
+analysed_ras = raster_analysis(raster)
+
+# Write analysed GeoTiff file
+with rasterio.open(PATH_RAS_OUT, 'w', **profile) as dst:
+	dst.write(analysed_ras)
+
+</code>
+</pre>
+</div>
+	</div>
+</section>
+
+</body>
+</html>

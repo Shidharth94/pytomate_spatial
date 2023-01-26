@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 20px;
+	font-family:  'SF Pro Display', sans-serif;
+}
+
+.container{
+	padding: 0 2.2rem;
+	margin: 0 auto;
+	max-width: 98rem;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	z-index: 1400;
+	width: 100%;
+	height: 4.4rem;
+	background-color: rgba(0, 0, 0, 0.8);
+	backdrop-filter: blur(2rem);
+}
+
+.blog_name{
+	text-decoration: none;
+	background-image: linear-gradient(45deg, yellow, green);
+	-webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.head_cont{
+	padding: 1rem 2.2rem;
+}
+
+.intro_section{
+	height: 20.2rem;
+	margin-top: 4.4rem;
+	background-color: rgba(0, 0, 0, 0.8);
+	background-size: auto 24.6rem;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+.intro{
+	color: white;
+}
+
+.sec_cont{
+	padding: 5rem 0;
+	width: 70vw;
+}
+
+.code_1{
+	height: 20.2rem;
+	background-size: auto.2rem;
+	background-repeat: no-repeat;
+}
+
+.code_sec_cont{
+	display: flex;
+	justify-content: center;
+}
+
+.code-description{
+	height: 20.2rem;
+	text-align: center;
+}
+
+.code{
+	width: 30rem;
+	height: 20.2rem;
+	overflow-x: auto;
+    overflow-y: auto;
+	padding: 0 2rem;
+}
+
+.title{
+	width: 30rem;
+}
