@@ -19,7 +19,7 @@ html{
 header{
 	position: fixed;
 	top: 0;
-	z-index: 1400;
+	z-index: 90;
 	width: 100%;
 	height: 6rem;
 	background-color: rgba(255, 255, 255, 1);
@@ -60,8 +60,8 @@ header{
 }
 
 .code{
-	height: 20.2rem;
-	background-size: auto.2rem;
+	height: 22.2rem;
+	background-size: auto .2rem;
 	background-repeat: no-repeat;
 	padding-top: 2rem;
 }
@@ -101,4 +101,76 @@ header{
 	position: relative;
 	bottom: -0.5rem;
 	right: 0.1rem;
+}
+
+
+#overlay, 
+#overlay2, 
+#overlay3, 
+#overlay4 {
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	background: #999;
+	width: 100%;
+	height: 150rem;
+	opacity: 0.8;
+	z-index: 100;
+}
+
+#popup, 
+#popup2, 
+#popup3, 
+#popup4 {
+	display: none;
+	position: fixed;
+	top: 4rem;
+	background: #fff;
+	width: 80vw;
+	height: 80vh;
+	z-index: 200;
+}
+
+#popup2, 
+#popup3, 
+#popup4{
+	margin: 0 10vw;
+}
+
+.popupcontent, 
+.popupcontent2, 
+.popupcontent3,
+.popupcontent4 {
+	padding: 10px;
+	height: 80vh;
+}
+
+#button, 
+#button2, 
+#button3,
+#button4 {
+	cursor: pointer;
+	font-size: 0.9rem;
+	padding: 0.4rem 0.4rem;
+	background-color: white;
+	border: none;
+	border-radius: .5rem;
+	text-align: center;
+	outline: none;
+	transition: .2s ease-in-out;
+	box-shadow: -6px -6px 14px rgba(255, 255, 255, .7),
+				-6px -6px 10px rgba(255, 255, 255, .5),
+				6px 6px 8px rgba(255, 255, 255, .075),
+				6px 6px 10px rgba(0, 0, 0, .15);
+}
+
+#button:active, 
+#button2:active, 
+#button3:active,
+#button4:active{
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
+              inset -2px -2px 4px rgba(255, 255, 255, .5),
+              inset 2px 2px 2px rgba(255, 255, 255, .075),
+              inset 2px 2px 4px rgba(0, 0, 0, .15);
 }
