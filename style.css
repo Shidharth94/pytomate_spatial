@@ -21,7 +21,7 @@ header{
 	top: 0;
 	z-index: 1400;
 	width: 100%;
-	height: 4.4rem;
+	height: 6rem;
 	background-color: rgba(255, 255, 255, 1);
 	backdrop-filter: blur(2rem);
 }
@@ -33,19 +33,19 @@ header{
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
-	font-size: 25px;
+	font-size: 30px;
 	-webkit-text-stroke: 0.5px black;
 }
 
 .head_cont{
-	padding: 1rem 2.2rem;
+	padding: 0.5rem 2.2rem;
 }
 
 .intro_section{
 	height: 20.2rem;
-	margin-top: 4.4rem;
+	margin-top: 6rem;
 	background-color: rgba(255, 255, 255, 1);
-	background-size: auto 24.6rem;
+	background-size: auto 26.2rem;
 	background-repeat: no-repeat;
 	text-align: center;
 }
@@ -95,4 +95,10 @@ header{
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
 	-webkit-text-stroke: 0.2px black;
+}
+
+.logo {
+	position: relative;
+	bottom: -0.5rem;
+	right: 0.1rem;
 }
