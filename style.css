@@ -104,10 +104,9 @@ header{
 }
 
 
-#overlay, 
-#overlay2, 
-#overlay3, 
-#overlay4 {
+#overlay1, #overlay2, 
+#overlay3, #overlay4,
+#overlay5 {
 	display: none;
 	position: fixed;
 	top: 0;
@@ -119,10 +118,9 @@ header{
 	z-index: 100;
 }
 
-#popup, 
-#popup2, 
-#popup3, 
-#popup4 {
+#popup1, #popup2, 
+#popup3, #popup4,
+#popup5 {
 	display: none;
 	position: fixed;
 	top: 4rem;
@@ -132,24 +130,21 @@ header{
 	z-index: 200;
 }
 
-#popup2, 
-#popup3, 
-#popup4{
+#popup2, #popup3, 
+#popup4, #popup5{
 	margin: 0 10vw;
 }
 
-.popupcontent, 
-.popupcontent2, 
-.popupcontent3,
-.popupcontent4 {
+.popupcontent1, .popupcontent2, 
+.popupcontent3, .popupcontent4,
+.popupcontent5 {
 	padding: 10px;
 	height: 80vh;
 }
 
-#button, 
-#button2, 
-#button3,
-#button4 {
+#button1, #button2, 
+#button3, #button4,
+#button5 {
 	cursor: pointer;
 	font-size: 0.9rem;
 	padding: 0.4rem 0.4rem;
@@ -165,10 +160,9 @@ header{
 				6px 6px 10px rgba(0, 0, 0, .15);
 }
 
-#button:active, 
-#button2:active, 
-#button3:active,
-#button4:active{
+#button1:active, #button2:active, 
+#button3:active, #button4:active,
+#button5:active {
   box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
               inset -2px -2px 4px rgba(255, 255, 255, .5),
               inset 2px 2px 2px rgba(255, 255, 255, .075),
