@@ -1,3 +1,10 @@
+document.getElementsByClassName('popupcontent')[0].innerHTML = document.getElementsByClassName('c1')[0].innerHTML;
+document.getElementsByClassName('popupcontent2')[0].innerHTML = document.getElementsByClassName('c2')[0].innerHTML;
+document.getElementsByClassName('popupcontent3')[0].innerHTML = document.getElementsByClassName('c3')[0].innerHTML;
+document.getElementsByClassName('popupcontent4')[0].innerHTML = document.getElementsByClassName('c4')[0].innerHTML;
+
+
+
 // for code 1
 // Initialize Variables
 var overlay = document.getElementById("overlay");
